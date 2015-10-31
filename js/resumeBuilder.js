@@ -16,9 +16,13 @@
 
 // $("#main").append(funThoughts);
 
-var formattedName = HTMLheaderName.replace("%data%", "Ørjan Ellingsen");
+var name = "Ørjan Ellingsen"
+var role = "Front-End Web Developer"
 
-var formattedRole = HTMLheaderRole.replace("%data%", "Front-End Web Developer");
+var formattedName = HTMLheaderName.replace("%data%", name);
 
-$("#header").append(formattedName);
-$("#header").append(formattedRole);
+var formattedRole = HTMLheaderRole.replace("%data%", role);
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+
