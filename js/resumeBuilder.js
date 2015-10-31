@@ -1,10 +1,17 @@
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
- $("#main").append("Ørjan");
+// $("#main").append("Ørjan");
 
- var awesomeThoughts = "I am Ørjan and I am AWESOME!"
- var funThoughts =
- 		awesomeThoughts.replace("AWESOME!","FUN");
+// [string].replace([old],[new])
 
- $("#main").append(funThoughts);
+var email ="orjanell@gmail.com";
+
+var newEmail = "orjellingsen@gmail.com";
+
+console.log(email);
+console.log(newEmail);
+
+var awesomeThoughts = "I am Ørjan and I am AWESOME!"
+
+var funThoughts =
+	awesomeThoughts.replace("AWESOME!","FUN");
+
+$("#main").append(funThoughts);
