@@ -1,7 +1,7 @@
 var bio = {
 	"name" : "Ørjan Ellingsen",
 	"role" : "Front-End Web Developer",
-	"welcomeMsg" : "lorem ipsum dolor sit amet etc etc etc.",
+	"welcomeMsg" : "Welcome to my resume",
 	"contacts" : {
 		"mobile": "111 22 333",
 		"email" : "orjellingsen@gmail.com",
@@ -9,7 +9,7 @@ var bio = {
 		"twitter" : "@johndoe",
 		"location" : "Bergen, Norway"
 	},
-	"skills" : ["awesomeness", "delivering things", "cryogenic sleep", "saving the universe"],
+	"skills" : ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "Github"],
 	"bioPic" : "images/fry.jpg"
 };
 var work = {
@@ -72,6 +72,17 @@ $("#header").append(formattedName);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 $("#header").append(formattedRole);
 
+// Contacts
+$("#header").append(HTMLcontactStart);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+$("#topContacts").append(formattedMobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+$("#topContacts").append(formattedEmail);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+$("#topContacts").append(formattedGithub);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+$("#topContacts").append(formattedLocation);
+
 var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
 $("#header").append(formattedWelcomeMsg);
 
@@ -84,19 +95,11 @@ if (bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);
 	for (var i = 0; i < bio.skills.length; i += 1) {
 		var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
-		$("#header").append(formattedSkills);
+		$("#skills").append(formattedSkills);
 	}
 }
 
-// Contacts
-var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-$("#header").append(formattedMobile);
-var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-$("#header").append(formattedEmail);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-$("#header").append(formattedGithub);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-$("#header").append(formattedLocation);
+
 
 // Work
 function displayWork () {
