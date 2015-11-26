@@ -76,18 +76,8 @@ function displayBio () {
 	$("#header").append(formattedName);
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#header").append(formattedRole);
-	// Contacts
-	$("#header").append(HTMLcontactStart);
-	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-	$("#topContacts").append(formattedMobile);
-	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-	$("#topContacts").append(formattedEmail);
-	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-	$("#topContacts").append(formattedGithub);
-	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-	$("#topContacts").append(formattedLocation);
-	var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
-	$("#header").append(formattedWelcomeMsg);
+	// Call function to display top contacts
+	displayContacts("topContacts");
 	// BioPic
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 	$("#header").append(formattedBioPic);
@@ -99,6 +89,18 @@ function displayBio () {
 			$("#skills").append(formattedSkills);
 		}
 	}
+}
+function displayContacts (contactsLocation) {
+	$("#header").append(HTMLcontactStart);
+	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+	$("#" + contactsLocation).append(formattedMobile);
+	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+	$("#" + contactsLocation).append(formattedEmail);
+	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+	$("#" + contactsLocation).append(formattedGithub);
+	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+	$("#" + contactsLocation).append(formattedLocation);
+	var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
 }
 // Display Work
 function displayWork () {
@@ -168,6 +170,7 @@ function displayProjects () {
 }
 // Call functions to display
 displayBio();
+displayContacts("footerContacts");
 displayWork();
 displayProjects();
 displayEducation();
