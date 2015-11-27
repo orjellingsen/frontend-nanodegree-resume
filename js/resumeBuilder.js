@@ -91,7 +91,9 @@ function displayBio () {
 	}
 }
 function displayContacts (contactsLocation) {
-	$("#header").append(HTMLcontactStart);
+	if (contactsLocation === "topContacts") {
+		$("#header").append(HTMLcontactStart);
+	}
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	$("#" + contactsLocation).append(formattedMobile);
 	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
