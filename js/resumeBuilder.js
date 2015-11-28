@@ -10,7 +10,7 @@ var bio = {
 		"location" : "Bergen, Norway"
 	},
 	"skills" : ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "Github"],
-	"bioPic" : "images/fry.jpg"
+	"bioPic" : ""
 };
 var work = {
 	"jobs" : [
@@ -37,8 +37,8 @@ var projects = {
 			"dates" : "2015",
 			"description" : "Portfolio project for Udacity",
 			"images" : [
-				"http://placehold.it/350x150",
-				"http://placehold.it/350x150"
+				"images/project1-1.jpg",
+				"images/project1-2.jpg"
 			]
 		}
 	]
@@ -79,8 +79,10 @@ function displayBio () {
 	// Call function to display top contacts
 	displayContacts("topContacts");
 	// BioPic
-	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-	$("#header").append(formattedBioPic);
+	if (bio.bioPic != "") {
+		var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+		$("#header").append(formattedBioPic);
+	}
 	// Skills
 	if (bio.skills.length > 0) {
 		$("#header").append(HTMLskillsStart);
