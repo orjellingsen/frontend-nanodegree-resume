@@ -33,14 +33,22 @@ var work = {
 var projects = {
 	"projects" : [
 		{
+			"title" : "About me",
+			"dates" : "2015",
+			"description" : "This was the first project that I made during the Udacity FEND course. It is a simple site with a logo and text, made with HTML and CSS.",
+			"images" : [
+				"images/project2-1.png"
+			]
+		},
+		{
 			"title" : "Portfolio",
 			"dates" : "2015",
-			"description" : "Portfolio project for Udacity",
+			"description" : "This is a project that I made for Front-End Web Developer Nanodegree program on Udacity. The task was to make a responsive portfolio site using HTML, CSS and Bootstrap.",
 			"images" : [
-				"images/project1-1.jpg",
-				"images/project1-2.jpg"
+				"images/project1-1.png"
 			]
 		}
+
 	]
 }
 var education = {

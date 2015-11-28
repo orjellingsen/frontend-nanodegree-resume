@@ -42,7 +42,6 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #FF5722;
   line-height: 29px;
   padding: 10px;
 }
@@ -50,14 +49,12 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #FF5722;
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #FF5722;
   line-height: 17px;
 }
 
@@ -66,7 +63,7 @@ h3,
 h4,
 h5 {
   padding:10px 5%;
-
+  color: #FF5722;
 }
 
 
@@ -109,9 +106,8 @@ a {
   line-height: 28px;
 }
 
-#skills-h3 {
+.skills-header {
   color: #fff;
-  display: none;
 }
 
 .orange {
@@ -119,7 +115,6 @@ a {
 }
 
 .orange-text {
-  /*color: #f5ae23;*/
   color: #727272;
 }
 
@@ -152,6 +147,9 @@ a {
 #topContacts {
   background-color: #D7CCC8;
   opacity: 0.8;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
+-moz-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
+box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
 }
 #role {
   color: #fff;
@@ -172,12 +170,11 @@ a {
 ul {
   list-style-type: none;
 }
-#workExperience, #projects, #education, #mapDiv {
--webkit-box-shadow: inset 0px 5px 10px -3px rgba(71,71,71,0.58);
--moz-box-shadow: inset 0px 5px 10px -3px rgba(71,71,71,0.58);
-box-shadow: inset 0px 5px 10px -3px rgba(71,71,71,0.58);
-border-left: 1px solid #B6B6B6;
-border-right: 1px solid #B6B6B6;
+#header, #workExperience, #projects, #education, #mapDiv {
+-webkit-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
+-moz-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
+box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
+  margin-bottom: 20px;
 }
 
 
