@@ -110,15 +110,16 @@ a {
   color: #fff;
 }
 
-.orange {
+.lets-connect {
     background-color: #303F9F;
+    color: #fff;
 }
 
-.orange-text {
+.contacts-text {
   color: #727272;
 }
 
-.white-text {
+.contacts-text {
   font-weight: bold;
   color: #212121;
 }
@@ -127,33 +128,40 @@ a {
   color: #fff;
 }
 
-.gray {
+/* Content styles */
+.bg1 {
   background-color: #C5CAE9;
   padding-bottom: 10px;
   clear:both;
 }
+
 .bg2 {
   background-color: #E9EBF9;
+  padding-bottom: 10px;
+  clear:both;
 }
 
-.dark-gray {
+.footer {
   background-color: #C5CAE9;
 }
 
-/* TODO: Replace with image later */
 #header {
   background-color: #3F51B5;
 }
+
 #topContacts {
   background-color: #C5CAE9;
   opacity: 0.8;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
--moz-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
+  box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
 }
+
 #role {
   color: #fff;
 }
+
+
 .flex-box {
   display: -webkit-flex;
   display: flex;
@@ -195,6 +203,10 @@ span {
 
 #lets-connect {
   text-align: center;
+}
+.connect-header {
+  background-color: #303F9F;
+  color: #fff;
 }
 
 /* Media queries to handle various device widths */
