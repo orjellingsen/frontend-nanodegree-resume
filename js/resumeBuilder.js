@@ -7,7 +7,7 @@ var bio = {
 		"email" : "orjanell@gmail.com",
 		"github" : "orjellingsen",
 		"twitter" : "@johndoe",
-		"location" : "Norway"
+		"location" : "Bergen, Norway"
 	},
 	"skills" : ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "Github"],
 	"bioPic" : ""
