@@ -4,10 +4,10 @@ var bio = {
 	"welcomeMsg" : "Welcome to my resume",
 	"contacts" : {
 		"mobile": "111 22 333",
-		"email" : "orjellingsen@gmail.com",
+		"email" : "orjanell@gmail.com",
 		"github" : "orjellingsen",
 		"twitter" : "@johndoe",
-		"location" : "Bergen, Norway"
+		"location" : "Norway"
 	},
 	"skills" : ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "Github"],
 	"bioPic" : ""
@@ -16,17 +16,17 @@ var work = {
 	"jobs" : [
 		{
 			"employer" : "Paradis Barnehage",
-			"title" : "Assistent",
+			"title" : "Assistant",
 			"location" : "Paradis, Bergen",
 			"dates" : "2008 - 2011",
-			"description" : "Barnehage"
+			"description" : "Kindergarden"
 		},
 		{
 			"employer" : "Kidsa Barnehager",
-			"title" : "Assistent",
+			"title" : "Assistant",
 			"location" : "Øvsttun, Bergen",
 			"dates" : "2011 - Present",
-			"description" : "Friluftsbarnehage"
+			"description" : "Kindergarden"
 		}
 	]
 }
