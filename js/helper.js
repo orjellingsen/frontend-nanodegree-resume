@@ -195,8 +195,9 @@ function initializeMap() {
     }
   }
 
-  // Disable scroll wheel on the map
+  // Disable scroll wheel on the map and show zoom buttons
   map.setOptions({ scrollwheel: false });
+  map.setOptions({ zoomControl: true});
 
 
   /*

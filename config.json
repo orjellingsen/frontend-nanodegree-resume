@@ -388,18 +388,11 @@
     "navbar.less"
   ],
   "js": [
-    "alert.js",
     "button.js",
-    "carousel.js",
-    "dropdown.js",
-    "modal.js",
-    "tooltip.js",
-    "popover.js",
-    "tab.js",
     "affix.js",
     "collapse.js",
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=1b58cd7d15d4a19fdf3f"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=c21c93185294219d9d19"
 }

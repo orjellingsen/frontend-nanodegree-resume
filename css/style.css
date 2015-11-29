@@ -1,3 +1,4 @@
+/* Styling */
 body,
 div,
 ul,
@@ -16,6 +17,9 @@ h6 {
   font-weight: 300;
 }
 
+body {
+  padding-top: 310px;
+}
 
 .clear-fix {
   overflow: auto;
@@ -63,7 +67,6 @@ h5 {
   padding:10px 5%;
   color: #38554A;
 }
-
 
 .date-text {
   font-style: italic;
@@ -121,6 +124,7 @@ a {
   font-weight: bold;
   color: #212121;
 }
+
 .skills-text {
   font-weight: bold;
   color: #fff;
@@ -130,16 +134,15 @@ a {
 body {
   background-color: #dde4ec;
 }
+
 .bg1 {
   background-color: #C5CAE9;
   padding-bottom: 10px;
-  clear:both;
 }
 
 .bg2 {
   background-color: #E9EBF9;
   padding-bottom: 10px;
-  clear:both;
 }
 
 .footer {
@@ -158,11 +161,9 @@ body {
   box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
 }
 
-
 #role {
   color: #fff;
 }
-
 
 .flex-box {
   display: -webkit-flex;
@@ -180,13 +181,13 @@ body {
 ul {
   list-style-type: none;
 }
+
 #header, #workExperience, #projects, #education, #mapDiv, #lets-connect {
--webkit-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
--moz-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
+  box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
   margin-bottom: 15px;
 }
-
 
 .biopic {
   float: left;
@@ -206,6 +207,7 @@ span {
 #lets-connect {
   text-align: center;
 }
+
 .connect-header {
   background-color: #303F9F;
   color: #fff;
@@ -253,4 +255,7 @@ span {
   .biopic {
     display: block;
   }
+}
+body {
+  background-color: @brand;
 }

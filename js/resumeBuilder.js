@@ -15,17 +15,24 @@ var bio = {
 var work = {
 	"jobs" : [
 		{
+			"employer" : "MI",
+			"title" : "Summer intern",
+			"location" : "Stavanger, Norway",
+			"dates" : "June 2008 - July 2008",
+			"description" : "I helped with designing a web-portal"
+		},
+		{
 			"employer" : "Paradis Barnehage",
 			"title" : "Assistant",
 			"location" : "Paradis, Bergen",
-			"dates" : "2008 - 2011",
+			"dates" : "August 2008 - May 2011",
 			"description" : "Kindergarden"
 		},
 		{
 			"employer" : "Kidsa Barnehager",
 			"title" : "Assistant",
 			"location" : "Øvsttun, Bergen",
-			"dates" : "2011 - Present",
+			"dates" : "September 2011 - Present",
 			"description" : "Kindergarden"
 		}
 	]
