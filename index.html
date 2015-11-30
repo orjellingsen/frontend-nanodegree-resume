@@ -20,29 +20,44 @@
 <body>
   <div id="main" class="container">
 
-    <header id="header" class="navbar-fixed-top container container-fluid center-content">
+
+
+    <header id="header" class="row center-content clear-fix">
     </header>
+
+    <nav class="navbar navbar-default row">
+      <div class="container-fluid text-center text-uppercase">
+        <ul class="nav navbar-nav col-md-12">
+          <li class="col-md-2"><a href="#">Bio</a></li>
+          <li class="col-md-2"><a href="#work">Work</a></li>
+          <li class="col-md-2"><a href="#proj">Projects</a></li>
+          <li class="col-md-2"><a href="#edu">Education</a></li>
+          <li class="col-md-2"><a href="#gMap">Map</a></li>
+          <li class="col-md-2"><a href="#connect">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <div style="clear: both;"></div>
 
     <section id="workExperience" class="row bg1">
-      <h2>Work Experience</h2>
+      <h2><span id="work"></span>Work Experience</h2>
     </section>
 
     <section id="projects" class="row bg2">
-      <h2>Projects</h2>
+      <h2><span id="proj"></span>Projects</h2>
     </section>
 
     <section id="education" class="row bg1">
-      <h2>Education</h2>
+      <h2><span id="edu"></span>Education</h2>
     </section>
 
     <section id="mapDiv" class="row bg2">
-      <h2>Where I've Lived and Worked</h2>
+      <h2><span id="gMap"></span>Where I've Lived and Worked</h2>
     </section>
     
     <footer id="lets-connect" class="row bg1">
-      <h2 class="connect-header center-text">Let's Connect</h2>
+      <h2 class="connect-header center-text"><span id="connect"></span>Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
     </footer>
