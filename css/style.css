@@ -22,16 +22,6 @@ body {
 	margin-bottom: 100px;
 }
 
-.clear-fix {
-	overflow: auto;
-}
-
-.education-entry,
-.work-entry,
-.project-entry {
-	padding: 0 5%;
-} 
-
 h1 {
 	font-size: 40px;
 	color: #fff;
@@ -70,9 +60,21 @@ h5 {
 	color: #38554A;
 }
 
-h2 span {
-	position: absolute;
-	top: -70px;
+p {
+	font-size: 14px;
+	color: #212121;
+	line-height: 21px;
+}
+
+a {
+	color: #212121;
+	text-decoration: none;
+	margin-top: 10px;
+	display: block;
+}
+
+ul {
+	list-style-type: none;
 }
 
 .date-text {
@@ -94,19 +96,6 @@ h2 span {
 
 }
 
-p {
-	font-size: 14px;
-	color: #212121;
-	line-height: 21px;
-}
-
-a {
-	color: #212121;
-	text-decoration: none;
-	margin-top: 10px;
-	display: block;
-}
-
 .welcome-message {
 	font-style: italic;
 	font-size: 18px;
@@ -125,11 +114,13 @@ a {
 
 .contacts-type {
 	color: #727272;
+	margin: 5px;
 }
 
 .contacts-text {
 	font-weight: bold;
 	color: #212121;
+	margin: 5px;
 }
 
 .skills-text {
@@ -137,23 +128,100 @@ a {
 	color: #fff;
 }
 
+/* Positioning */
+.flex-box {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.center-content {
+	padding: 2.5% 5%;
+}
+
+.biopic {
+	float: left;
+	padding: 10px;
+	width: 200px;
+	display: none;
+}
+
+.project-image {
+	padding: 10px;
+}
+
+#lets-connect {
+	text-align: center;
+}
+
+#map {
+	display: block;
+	height: 100%;
+	margin: 0 5%;
+}
+
+#mapDiv {
+	height: 400px;
+	padding-bottom: 5%;
+}
+
+.anchor {
+	position: absolute;
+	top: -100px;
+}
+
+#header,
+#education,
+#mapDiv,
+#workExperience,
+#projects {
+	margin-bottom: 15px;
+}
+
+.clear-fix {
+	overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+	padding: 0 5%;
+} 
+
+/* Navigation bar */
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+	background-color: #3B3936;
+}
+
+.nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+	font-family: Lato;
+	font-size: 1.7em;
+	font-weight: 300;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444444;
+	transition: 0.7s all linear;
+	height: 100%;
+}
+
 /* Background Colors */
 body {
 	background-color: #EEF0F2;
-}
-
-.bg1 {
-	background-color: #BBBAC6;
-	padding-bottom: 10px;
-}
-
-.bg2 {
-	background-color: #E2E2E2;
-	padding-bottom: 10px;
-}
-
-.footer {
-	background-color: #B7CECE;
 }
 
 #header {
@@ -172,55 +240,23 @@ body {
 	color: #fff;
 }
 
-.flex-box {
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 10px;
+.bg1 {
+	background-color: #BBBAC6;
+	padding-bottom: 10px;
 }
 
-.center-content {
-	padding: 2.5% 5%;
+.bg2 {
+	background-color: #E2E2E2;
+	padding-bottom: 10px;
 }
 
-ul {
-	list-style-type: none;
-}
-
-.biopic {
-	float: left;
-	padding: 10px;
-	width: 200px;
-	display: none;
-}
-
-.project-image {
-	padding: 10px;
-}
-
-#lets-connect {
-	text-align: center;
+.footer {
+	background-color: #B7CECE;
 }
 
 .connect-header {
 	background-color: #3B3936;
 	color: #fff;
-}
-
-#map {
-	display: block;
-	height: 100%;
-	margin: 0 5%;
-}
-
-#mapDiv {
-	height: 400px;
-	padding-bottom: 5%;
-}
-
-#header, #education, #mapDiv, #workExperience, #projects { margin-bottom: 15px;
 }
 
 /* Media queries to handle various device widths */
@@ -257,32 +293,4 @@ ul {
 	.biopic {
 		display: block;
 	}
-}
-
-
-.navbar, .navbar-inverse {
-	border-radius: 0;
-	border: none;
-	margin-bottom: 0;
-	min-height: 80px;
-	background-color: #3B3936;
-}
-
-.nav li {
-	display: inline;
-	color: white;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-	color: #fff;
-	font-family: Lato;
-	font-size: 1.7em;
-	font-weight: 300;
-	padding: 30px 25px 33px 25px;
-}
-
-.navbar-inverse .navbar-nav li a:hover {
-	background-color: #444444;
-	transition: 0.7s all linear;
-	height: 100%;
 }
