@@ -19,6 +19,7 @@ h6 {
 
 body {
 	padding-top: 100px;
+	margin-bottom: 100px;
 }
 
 .clear-fix {
@@ -138,29 +139,29 @@ a {
 
 /* Background Colors */
 body {
-	background-color: #dde4ec;
+	background-color: #EEF0F2;
 }
 
 .bg1 {
-	background-color: #C5CAE9;
+	background-color: #BBBAC6;
 	padding-bottom: 10px;
 }
 
 .bg2 {
-	background-color: #E9EBF9;
+	background-color: #E2E2E2;
 	padding-bottom: 10px;
 }
 
 .footer {
-	background-color: #C5CAE9;
+	background-color: #B7CECE;
 }
 
 #header {
-	background-color: #3F51B5;
+	background-color: #6E7E85;
 }
 
 #topContacts {
-	background-color: #C5CAE9;
+	background-color: #B7CECE;
 	opacity: 0.8;
 	-webkit-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
 	-moz-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
@@ -204,7 +205,7 @@ ul {
 }
 
 .connect-header {
-	background-color: #303F9F;
+	background-color: #3B3936;
 	color: #fff;
 }
 
@@ -217,6 +218,9 @@ ul {
 #mapDiv {
 	height: 400px;
 	padding-bottom: 5%;
+}
+
+#header, #education, #mapDiv, #workExperience, #projects { margin-bottom: 15px;
 }
 
 /* Media queries to handle various device widths */
@@ -243,6 +247,9 @@ ul {
 	.welcome-message {
 		display: none;
 	}
+	body {
+		margin-bottom: 200px;
+	}
 }
 
 @media only screen and (min-width: 750px) {
@@ -258,6 +265,7 @@ ul {
 	border: none;
 	margin-bottom: 0;
 	min-height: 80px;
+	background-color: #3B3936;
 }
 
 .nav li {
