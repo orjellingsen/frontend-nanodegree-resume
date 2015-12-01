@@ -19,7 +19,7 @@ var work = {
 			"title" : "Summer intern",
 			"location" : "Stavanger, Norway",
 			"dates" : "June 2008 - July 2008",
-			"description" : "I helped with designing a web-portal"
+			"description" : "I designed a web-portal"
 		},
 		{
 			"employer" : "Paradis Barnehage",

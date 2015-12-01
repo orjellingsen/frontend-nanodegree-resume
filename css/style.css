@@ -17,6 +17,10 @@ h6 {
 	font-weight: 300;
 }
 
+body {
+	padding-top: 100px;
+}
+
 .clear-fix {
 	overflow: auto;
 }
@@ -184,18 +188,6 @@ ul {
 	list-style-type: none;
 }
 
-#header,
-#workExperience,
-#projects,
-#education,
-#mapDiv,
-#lets-connect {
-	-webkit-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
-	-moz-box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
-	box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.58);
-	margin-bottom: 15px;
-}
-
 .biopic {
 	float: left;
 	padding: 10px;
@@ -258,4 +250,31 @@ ul {
 	.biopic {
 		display: block;
 	}
+}
+
+
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+}
+
+.nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+	font-family: Lato;
+	font-size: 1.7em;
+	font-weight: 300;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444444;
+	transition: 0.7s all linear;
+	height: 100%;
 }
