@@ -1,101 +1,99 @@
 <!DOCTYPE html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Resume - Ørjan Ellingsen</title>
+	<title></title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
-  <script src="js/jQuery.js"></script>
-  <script src="js/helper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+	<script src="js/jQuery.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
 </head>
-<body>
-  <div id="main" class="container">
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
+	<div id="main" class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#main">Bio</a></li>
+						<li><a href="#workExperience">Work</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#mapDiv">Map</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="bs-navbar-collapse" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Bio</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#edu">Education</a></li>
-            <li><a href="#gMap">Map</a></li>
-            <li><a href="#connect">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<header id="header" class="row center-content clear-fix">
+		</header>
 
-    <header id="header" class="row center-content clear-fix">
-    </header>
+		<div style="clear: both;"></div>
 
-    <div style="clear: both;"></div>
+		<section id="workExperience" class="row bg1">
+			<h2>Work Experience</h2>
+		</section>
 
-    <section id="workExperience" class="row bg1">
-      <h2><span id="work" class="anchor"></span>Work Experience</h2>
-    </section>
+		<section id="projects" class="row bg2">
+			<h2>Projects</h2>
+		</section>
 
-    <section id="projects" class="row bg2">
-      <h2><span id="proj" class="anchor"></span>Projects</h2>
-    </section>
+		<section id="education" class="row bg1">
+			<h2>Education</h2>
+		</section>
 
-    <section id="education" class="row bg1">
-      <h2><span id="edu" class="anchor"></span>Education</h2>
-    </section>
+		<section id="mapDiv" class="row bg2">
+			<h2>Where I've Lived and Worked</h2>
+		</section>
+		
+		<footer id="lets-connect" class="navbar-fixed-bottom row footer">
+			<h2 class="connect-header center-text">Let's Connect</h2>
+				<ul id="footerContacts" class="flex-box">
+			</ul>
+		</footer>
+	</div>
 
-    <section id="mapDiv" class="row bg2">
-      <h2><span id="gMap" class="anchor"></span>Where I've Lived and Worked</h2>
-    </section>
-    
-    <footer id="lets-connect" class="navbar-fixed-bottom row footer">
-      <h2 class="connect-header center-text"><span id="connect"></span>Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-      </ul>
-    </footer>
-  </div>
-
-  <script src="js/resumeBuilder.js"></script>
-  <script type="text/javascript">
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
+	<script src="js/resumeBuilder.js"></script>
+	<script type="text/javascript">
+		if(document.getElementsByClassName('flex-item').length === 0) {
+			document.getElementById('topContacts').style.display = 'none';
+		}
+		if(document.getElementsByTagName('h1').length === 0) {
+			document.getElementById('header').style.display = 'none';
+		}
+		if(document.getElementsByClassName('work-entry').length === 0) {
+			document.getElementById('workExperience').style.display = 'none';
+		}
+		if(document.getElementsByClassName('project-entry').length === 0) {
+			document.getElementById('projects').style.display = 'none';
+		}
+		if(document.getElementsByClassName('education-entry').length === 0) {
+			document.getElementById('education').style.display = 'none';
+		}
+		if(document.getElementsByClassName('flex-item').length === 0) {
+			document.getElementById('lets-connect').style.display = 'none';
+		}
+		if(document.getElementById('map') === null) {
+			document.getElementById('mapDiv').style.display = 'none';
+		}
+	</script>
 </body>
 </html>

@@ -55,7 +55,6 @@ var projects = {
 				"images/project1-1.png"
 			]
 		}
-
 	]
 }
 var education = {
@@ -85,10 +84,12 @@ var education = {
 		}
 	]
 }
+
 // Display bio
 function displayBio () {
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
 	$("#header").append(formattedName);
+
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#header").append(formattedRole);
 	// Call function to display top contacts
@@ -106,7 +107,11 @@ function displayBio () {
 			$("#skills").append(formattedSkills);
 		}
 	}
+	// Insert name into title
+	$('title').append('Resume - ' + bio.name);
 }
+
+// Display Contacts. Function can be called to display contacts on bottom or top of the page
 function displayContacts (contactsLocation) {
 	if (contactsLocation === "topContacts") {
 		$("#header").append(HTMLcontactStart);
@@ -121,6 +126,7 @@ function displayContacts (contactsLocation) {
 	$("#" + contactsLocation).append(formattedLocation);
 	var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
 }
+
 // Display Work
 function displayWork () {
 	for (job in work.jobs) {
@@ -139,6 +145,7 @@ function displayWork () {
 		$(".work-entry:last").append(formattedWorkDescription);
 	}
 }
+
 // Display Education
 function displayEducation () {
 	for (school in education.schools) {
@@ -165,6 +172,7 @@ function displayEducation () {
 		$(".education-entry:last").append(formattedOnlineURL);
 	}
 }
+
 // Display Projects
 function displayProjects () {
 	for (project in projects.projects) {
@@ -187,11 +195,33 @@ function displayProjects () {
 		}
 	}
 }
+
 // Call functions to display
 displayBio();
-displayContacts("footerContacts");
+displayContacts('footerContacts');
 displayWork();
 displayProjects();
 displayEducation();
+
 // Show map
 $("#mapDiv").append(googleMap);
+
+// Scrollspy monitor where you are on the page and focus the nav-buttons
+$('body').scrollspy({ target: '#navbar' })
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+
+// Offset the scroll when clicking, to account for the fixed navbar
+// This code was borrowed and adapted from an answer on stackoverflow
+var offset = 100;
+
+$('#navbar li a').click(function(event) {
+	// Update the url with hash section
+	window.location.hash = $(this).attr('href')
+
+	event.preventDefault();
+	$($(this).attr('href'))[0].scrollIntoView();
+	scrollBy(0, -offset);
+
+});

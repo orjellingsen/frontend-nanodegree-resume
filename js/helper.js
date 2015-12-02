@@ -107,7 +107,10 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    // Disable scroll wheel on the map and show zoom buttons
+    scrollwheel: false,
+    zoomControl: true
   };
 
   /* 
@@ -195,9 +198,7 @@ function initializeMap() {
     }
   }
 
-  // Disable scroll wheel on the map and show zoom buttons
-  map.setOptions({ scrollwheel: false });
-  map.setOptions({ zoomControl: true});
+ 
 
 
   /*

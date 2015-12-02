@@ -20,6 +20,7 @@ h6 {
 body {
 	padding-top: 100px;
 	margin-bottom: 100px;
+	position: relative;
 }
 
 h1 {
@@ -164,7 +165,7 @@ ul {
 }
 
 #mapDiv {
-	height: 400px;
+	height: 600px;
 	padding-bottom: 5%;
 }
 
@@ -179,6 +180,11 @@ ul {
 #workExperience,
 #projects {
 	margin-bottom: 15px;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
+	box-shadow: 2px 2px 5px 0px rgba(71,71,71,0.58);
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .clear-fix {
