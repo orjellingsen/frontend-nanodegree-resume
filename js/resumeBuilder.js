@@ -108,7 +108,7 @@ function displayBio () {
 		}
 	}
 	// Insert name into title
-	$('title').append('Resume - ' + bio.name);
+	$('title').append(' - ' + bio.name);
 }
 
 // Display Contacts. Function can be called to display contacts on bottom or top of the page
