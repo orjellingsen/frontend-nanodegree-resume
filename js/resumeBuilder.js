@@ -210,18 +210,4 @@ $('#mapDiv').append(googleMap);
 $('body').scrollspy({ target: '#navbar' })
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
-})
-
-// Offset the scroll when clicking, to account for the fixed navbar
-// This code was borrowed and adapted from an answer on stackoverflow
-var offset = 100;
-
-$('#navbar li a').click(function(event) {
-	// Update the url with hash section
-	window.location.hash = $(this).attr('href')
-
-	event.preventDefault();
-	$($(this).attr('href'))[0].scrollIntoView();
-	scrollBy(0, -offset);
-
 });
