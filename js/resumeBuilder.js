@@ -208,7 +208,7 @@ $('#mapDiv').append(googleMap);
 
 // Scrollspy monitor where you are on the page and focus the nav-buttons
 $('body').scrollspy({ target: '#navbar' })
-$('[data-spy='scroll']').each(function () {
+$('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 })
 
