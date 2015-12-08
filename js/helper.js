@@ -113,6 +113,7 @@ function initializeMap() {
     zoomControl: true
   };
 
+
   /* 
   For the map to be displayed, the googleMap var must be
   appended to #mapDiv in resumeBuilder.js. 
@@ -174,9 +175,14 @@ function initializeMap() {
       content: name
     });
 
-    // hmmmm, I wonder what this is about...
+    // Open window that display name when clicking a marker
     google.maps.event.addListener(marker, 'click', function() {
-      // your code goes here!
+      infoWindow.open(map, marker);
+    });
+
+    // Close the info window when clicking on the map
+    google.maps.event.addListener(map, "click", function(event) {
+      infoWindow.close();
     });
 
     // this is where the pin actually gets added to the map.

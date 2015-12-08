@@ -36,7 +36,7 @@ var work = {
 			'description' : 'Kindergarden'
 		}
 	]
-}
+};
 var projects = {
 	'projects' : [
 		{
@@ -56,7 +56,7 @@ var projects = {
 			]
 		}
 	]
-}
+};
 var education = {
 	'schools' : [
 		{
@@ -83,7 +83,7 @@ var education = {
 			'url' : 'www.teamtreehouse.com'
 		}
 	]
-}
+};
 
 // Display bio
 function displayBio () {
@@ -129,7 +129,7 @@ function displayContacts (contactsLocation) {
 
 // Display Work
 function displayWork () {
-	for (job in work.jobs) {
+	for (var job in work.jobs) {
 		// create new div for work experience
 		$('#workExperience').append(HTMLworkStart);
 		// concat employer and title
