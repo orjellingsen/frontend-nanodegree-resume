@@ -211,3 +211,25 @@ $('body').scrollspy({ target: '#navbar' })
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 });
+
+
+function checkWidth(init)
+{
+    /*If browser resized, check width again */
+    if ($(window).width() < 750) {
+        $('.navbar').addClass('row');
+    }
+    else {
+        if (!init) {
+            $('.navbar').removeClass('row');
+        }
+    }
+}
+
+$(document).ready(function() {
+    checkWidth(true);
+
+    $(window).resize(function() {
+        checkWidth(false);
+    });
+});
