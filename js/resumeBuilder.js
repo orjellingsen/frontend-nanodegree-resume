@@ -1,41 +1,41 @@
 // JSON containing the information to display on the page
 var bio = {
-	'name' : 'Ørjan Ellingsen',
-	'role' : 'Front-End Web Developer',
-	'welcomeMsg' : 'This is my resume. Feel free to contact me',
-	'contacts' : {
+	'name': 'Ørjan Ellingsen',
+	'role': 'Front-End Web Developer',
+	'welcomeMsg': 'This is my resume. Feel free to contact me',
+	'contacts': {
 		'mobile': '111 22 333',
-		'email' : 'orjanell@gmail.com',
-		'github' : 'orjellingsen',
-		'twitter' : '@johndoe',
-		'location' : 'Bergen, Norway'
+		'email': 'orjanell@gmail.com',
+		'github': 'orjellingsen',
+		'twitter': '@johndoe',
+		'location': 'Bergen, Norway'
 	},
-	'skills' : ['PHP', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Github'],
-	'biopic' : 'images/biopic.jpg'
+	'skills': ['PHP', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Github'],
+	'biopic': 'images/biopic.jpg'
 };
 
 var work = {
-	'jobs' : [
+	'jobs': [
 		{
-			'employer' : 'MI',
-			'title' : 'Summer intern',
-			'location' : 'Stavanger, Norway',
-			'dates' : 'June 2008 - July 2008',
-			'description' : 'I designed a web-portal'
+			'employer': 'MI',
+			'title': 'Summer intern',
+			'location': 'Stavanger, Norway',
+			'dates': 'June 2008 - July 2008',
+			'description': 'I designed a web-portal'
 		},
 		{
-			'employer' : 'Paradis Barnehage',
-			'title' : 'Assistant',
-			'location' : 'Paradis, Bergen',
-			'dates' : 'August 2008 - May 2011',
-			'description' : 'Kindergarden'
+			'employer': 'Paradis Barnehage',
+			'title': 'Assistant',
+			'location': 'Paradis, Bergen',
+			'dates': 'August 2008 - May 2011',
+			'description': 'Kindergarden'
 		},
 		{
-			'employer' : 'Kidsa Barnehager',
-			'title' : 'Assistant',
-			'location' : 'Øvsttun, Bergen',
-			'dates' : 'September 2011 - Present',
-			'description' : 'Kindergarden'
+			'employer': 'Kidsa Barnehager',
+			'title': 'Assistant',
+			'location': 'Øvsttun, Bergen',
+			'dates': 'September 2011 - Present',
+			'description': 'Kindergarden'
 		}
 	]
 };
@@ -43,18 +43,18 @@ var work = {
 var projects = {
 	'projects' : [
 		{
-			'title' : 'About me',
-			'dates' : '2015',
-			'description' : 'This was the first project that I made during the Udacity FEND course. It is a simple site with a logo and text, made with HTML and CSS.',
-			'images' : [
+			'title': 'About me',
+			'dates': '2015',
+			'description': 'This was the first project that I made during the Udacity FEND course. It is a simple site with a logo and text, made with HTML and CSS.',
+			'images': [
 				'images/project2-1.png'
 			]
 		},
 		{
-			'title' : 'Portfolio',
-			'dates' : '2015',
-			'description' : 'This is a project that I made for Front-End Web Developer Nanodegree program on Udacity. The task was to make a responsive portfolio site using HTML, CSS and Bootstrap.',
-			'images' : [
+			'title': 'Portfolio',
+			'dates': '2015',
+			'description': 'This is a project that I made for Front-End Web Developer Nanodegree program on Udacity. The task was to make a responsive portfolio site using HTML, CSS and Bootstrap.',
+			'images': [
 				'images/project1-1.png'
 			]
 		}
@@ -62,29 +62,29 @@ var projects = {
 };
 
 var education = {
-	'schools' : [
+	'schools': [
 		{
-			'name' : 'U-Pihl Videregående Skole',
-			'city' : 'Bergen',
-			'degree' : 'vgs',
-			'major' : ['Allmenn'],
-			'dates' : '2002 - 2005',
-			'location' : 'Åsane, Bergen',
-			'url' : 'http://skole.hfk.no/upihlvgs'
+			'name': 'U-Pihl Videregående Skole',
+			'city': 'Bergen',
+			'degree': 'vgs',
+			'major': ['Allmenn'],
+			'dates': '2002 - 2005',
+			'location': 'Åsane, Bergen',
+			'url': 'http://skole.hfk.no/upihlvgs'
 		}
 	],
-	'onlineCourses' : [
+	'onlineCourses': [
 		{
-			'title' : 'Front-End Web Developmer Nanodegree',
-			'school' : 'Udacity',
-			'dates' : '2015',
-			'url' : 'www.udacity.com'
+			'title': 'Front-End Web Developmer Nanodegree',
+			'school': 'Udacity',
+			'dates': '2015',
+			'url': 'www.udacity.com'
 		},
 		{
-			'title' : 'Full Stack JavaScript',
-			'school' : 'TeamTreeHouse',
-			'dates' : '2015',
-			'url' : 'www.teamtreehouse.com'
+			'title': 'Full Stack JavaScript',
+			'school': 'TeamTreeHouse',
+			'dates': '2015',
+			'url': 'www.teamtreehouse.com'
 		}
 	]
 };
@@ -205,27 +205,26 @@ $('#mapDiv').append(googleMap);
 // Scrollspy monitor where you are on the page and focus the nav-buttons
 $('body').scrollspy({ target: '#navbar' });
 $('[data-spy="scroll"]').each(function () {
-  var $spy = $(this).scrollspy('refresh');
+	var $spy = $(this).scrollspy('refresh');
 });
 
 // The following code was borrowed from a post on stackoverflow and modified for my use
 function checkWidth(init)
 {
-    /*If browser resized, check width again */
-    if ($(window).width() < 750) {
-        $('.navbar').addClass('row');
-    }
-    else {
-        if (!init) {
-            $('.navbar').removeClass('row');
-        }
-    }
+	/*If browser resized, check width again */
+	if ($(window).width() < 750) {
+		$('.navbar').addClass('row');
+	}
+	else {
+		if (!init) {
+			$('.navbar').removeClass('row');
+		}
+	}
 }
 
 $(document).ready(function() {
-    checkWidth(true);
-
-    $(window).resize(function() {
-        checkWidth(false);
-    });
+	checkWidth(true);
+	$(window).resize(function() {
+		checkWidth(false);
+	});
 });
