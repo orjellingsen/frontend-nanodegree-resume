@@ -2,7 +2,7 @@
 var bio = {
 	'name' : 'Ørjan Ellingsen',
 	'role' : 'Front-End Web Developer',
-	'welcomeMsg' : 'Welcome to my resume',
+	'welcomeMsg' : 'This is my resume. Feel free to contact me',
 	'contacts' : {
 		'mobile': '111 22 333',
 		'email' : 'orjanell@gmail.com',
@@ -11,7 +11,7 @@ var bio = {
 		'location' : 'Bergen, Norway'
 	},
 	'skills' : ['PHP', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Github'],
-	'biopic' : 'images/fry.jpg'
+	'biopic' : 'images/biopic.jpg'
 };
 
 var work = {
@@ -98,13 +98,13 @@ bio.display = function () {
 	var fName = HTMLheaderName.replace(data, bio.name);
 	var fRole = HTMLheaderRole.replace(data, bio.role);
 	$('#header').append(fName, fRole);
-	// Call function to display top contacts
-	bio.displayContacts('topContacts');
 	// BioPic - display if it exist
 	if (bio.biopic) {
 		var fBiopic = HTMLbioPic.replace(data, bio.biopic);
 		$('#header').append(fBiopic);
 	}
+	// Call function to display top contacts
+	bio.displayContacts('topContacts');
 	// Skills - display if they exist
 	if (bio.skills.length) {
 		$('#header').append(HTMLskillsStart);
@@ -112,6 +112,11 @@ bio.display = function () {
 			var fSkills = HTMLskills.replace(data, bio.skills[i]);
 			$('#skills').append(fSkills);
 		}
+	}
+	// Welcome Message - display if it exist
+	if (bio.welcomeMsg) {
+		var fWelcomeMsg = HTMLwelcomeMsg.replace(data, bio.welcomeMsg);
+		$('#header').append(fWelcomeMsg);
 	}
 	// Insert name into title of the page
 	$('title').append(' - ' + bio.name);
@@ -179,7 +184,7 @@ projects.display = function () {
 		var fDescription = HTMLprojectDescription.replace(data, thisProject.description);
 		$('.project-entry:last').append(fTitle, fDates, fDescription);
 		if (thisProject.images.length) {
-			for (var image in projects.projects[project].images) {
+			for (var image in thisProject.images) {
 				var formattedImage = HTMLprojectImage.replace(data, thisProject.images[image]);
 				$('.project-entry:last').append(formattedImage);
 			}
