@@ -86,7 +86,7 @@ var education = {
 };
 
 // Display bio
-function displayBio () {
+bio.display = function () {
 	var formattedName = HTMLheaderName.replace('%data%', bio.name);
 	$('#header').append(formattedName);
 
@@ -128,7 +128,7 @@ function displayContacts (contactsLocation) {
 }
 
 // Display Work
-function displayWork () {
+work.display = function () {
 	for (var job in work.jobs) {
 		// create new div for work experience
 		$('#workExperience').append(HTMLworkStart);
@@ -147,7 +147,7 @@ function displayWork () {
 }
 
 // Display Education
-function displayEducation () {
+education.display = function () {
 	for (school in education.schools) {
 		$('#education').append(HTMLschoolStart);
 		var formattedSchoolName = HTMLschoolName.replace('%data%', education.schools[school].name);
@@ -174,7 +174,7 @@ function displayEducation () {
 }
 
 // Display Projects
-function displayProjects () {
+projects.display = function () {
 	for (project in projects.projects) {
 		$('#projects').append(HTMLprojectStart);
 
@@ -197,11 +197,11 @@ function displayProjects () {
 }
 
 // Call functions to display
-displayBio();
+bio.display();
+work.display();
+projects.display();
+education.display();
 displayContacts('footerContacts');
-displayWork();
-displayProjects();
-displayEducation();
 
 // Show map
 $('#mapDiv').append(googleMap);
